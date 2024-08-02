@@ -1,19 +1,20 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "campus_hub/app.py",
-      "use": "@vercel/python",
-      "config": {
-        "pythonVersion": "3.11"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "campus_hub/app.py"
-    }
-  ]
+    "version": 2,
+    "builds": [
+        {
+            "src": "campus_hub/app.py",
+            "use": "@vercel/python",
+            "config": {
+                "pythonVersion": "3.11",
+                "poetry": true
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "campus_hub/app.py"
+        }
+    ]
 }
 
