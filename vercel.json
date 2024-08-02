@@ -1,20 +1,31 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "campus_hub/app.py",
-            "use": "@vercel/python",
-            "config": {
-                "pythonVersion": "3.11",
-                "poetry": true
-            }
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "campus_hub/app.py"
-        }
-    ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "campus_hub/app.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "50mb",
+        "pythonVersion": "3.11"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "campus_hub/app.py"
+    }
+  ],
+  "includeFiles": [
+    "campus_hub/**/*",
+    "requirements.txt"
+  ],
+  "excludeFiles": [
+    "tests/*",
+    "venv/*",
+    ".git/*",
+    ".gitignore",
+    "README.md"
+  ]
 }
 
