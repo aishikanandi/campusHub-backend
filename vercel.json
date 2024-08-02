@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "builds": [
+        {"src": "/campus_hub/app.py", "use": "@vercel/python"}
+    ],
+    "routes": [
+        {"src": "/campus_hub/(.*)", "dest": "/campus_hub/app.py"}
+    ]
+}
