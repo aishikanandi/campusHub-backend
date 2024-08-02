@@ -31,6 +31,7 @@ pandas-stubs = "^2.2.1.240316"
 mlflow = "^2.11.3"
 types-requests = "^2.31.0.20240406"
 flask-cors = "^4.0.1"
+poetry-plugin-export = "^1.8.0"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.1.9"
