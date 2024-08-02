@@ -16,10 +16,6 @@
       "dest": "campus_hub/app.py"
     }
   ],
-  "includeFiles": [
-    "campus_hub/**/*",
-    "requirements.txt"
-  ],
   "excludeFiles": [
     "tests/*",
     "venv/*",
